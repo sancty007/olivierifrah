@@ -1,0 +1,24 @@
+
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  logo        String
+  title       String
+  company     String
+  year        DateTime
+  description String
+  buttonText  String
+  images      String[] // Liste d'URL d'images
+}
+
+model Nav {
+  id   Int    @id @default(autoincrement())
+  work String
+  play String
+}
+
+model Menu {
+  id   Int    @id @default(autoincrement())
+  name String
+  icon String
+}
